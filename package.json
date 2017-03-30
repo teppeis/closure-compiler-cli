@@ -1,0 +1,35 @@
+{
+  "name": "closure-compiler-cli",
+  "description": "CLI wrapper for google-closure-compiler",
+  "version": "1.0.0",
+  "author": "Teppei Sato <teppeis@gmail.com>",
+  "main": "index.js",
+  "bin": {
+    "closure-compiler": "index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "eslint index.js"
+  },
+  "dependencies": {
+    "google-closure-compiler": ">=20170218.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-config-teppeis": "^5.3.0"
+  },
+  "homepage": "https://github.com/teppeis/closure-compiler-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/teppeis/closure-compiler-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/teppeis/closure-compiler-cli/issues"
+  },
+  "keywords": [
+    "closure-compiler"
+  ],
+  "license": "MIT"
+}
