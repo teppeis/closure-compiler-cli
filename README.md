@@ -13,6 +13,7 @@ CLI wrapper for [google-closure-compiler](https://www.npmjs.com/package/google-c
 ```console
 $ npm i -g closure-compiler-cli
 ```
+and `java` is required in your `PATH`.
 
 ## Usage
 
