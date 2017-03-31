@@ -1,7 +1,7 @@
 {
   "name": "closure-compiler-cli",
   "description": "CLI wrapper for google-closure-compiler",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Teppei Sato <teppeis@gmail.com>",
   "main": "index.js",
   "bin": {
