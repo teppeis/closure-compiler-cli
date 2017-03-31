@@ -1,7 +1,7 @@
 closure-compiler-cli
 ====
 
-CLI wrapper for [google-closure-compiler](https://www.npmjs.com/package/google-closure-compiler)
+Thin CLI wrapper for [`google-closure-compiler`](https://www.npmjs.com/package/google-closure-compiler)
 
 [![npm version][npm-image]][npm-url]
 ![Node.js Version Support][node-version]
