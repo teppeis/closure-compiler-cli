@@ -25,6 +25,27 @@ equals to
 $ java -jar path/to/compiler.jar --some --options foo bar
 ```
 
+## Why?
+
+If `closure-compiler-cli` is installed in your project local, you can use Closure Compiler in `npm scripts` like
+```json
+{
+  "scripts": {
+    "minify": "closure-compiler --js ./src/app.js --language_out ES5 > ./dist/bundle.js"
+  }
+}
+```
+instead of
+```json
+{
+  "scripts": {
+    "minify": "java -jar ./node_modules/google-closure-compiler/compiler.jar --js ./src/app.js --language_out ES5 > ./dist/bundle.js"
+  }
+}
+```
+
+The path to the compiler jar is changable and provided with `require('google-closure-compiler').compiler.COMPILER_PATH` [officially](https://github.com/google/closure-compiler-npm#plugin-authors-and-native-node-usage), but it's API only for Node.js and not available for shell script.
+
 ## License
 
 MIT License: Teppei Sato &lt;teppeis@gmail.com&gt;
