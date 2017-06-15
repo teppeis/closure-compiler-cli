@@ -1,6 +1,8 @@
 closure-compiler-cli
 ====
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/teppeis/closure-compiler-cli.svg)](https://greenkeeper.io/)
+
 Thin CLI wrapper for [`google-closure-compiler`](https://www.npmjs.com/package/google-closure-compiler)
 
 [![npm version][npm-image]][npm-url]
