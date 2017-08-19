@@ -11,6 +11,8 @@ jobs:
   node-base: &node-base
     docker:
       - image: node
+    environment:
+      TEST_REPORTS: /tmp/test-reports
     working_directory: ~/working_directory
     steps:
       - run:
@@ -30,7 +32,9 @@ jobs:
           command: yarn install
       - run:
           name: Test
-          command: yarn test
+          command: |
+            mkdir -p $TEST_REPORTS
+            yarn test
       - save_cache:
           key: v{{ .Environment.CIRCLE_CACHE_VERSION }}-yarn-lock-{{ .Branch }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum "yarn.lock" }}
           paths:
@@ -49,6 +53,9 @@ jobs:
             if [[ "$CACHE_DIR" != /usr/local/share/.cache/yarn* ]]; then
                 exit 1
             fi
+      - store_test_results:
+          # path: {{ .Environment.TEST_REPORTS }}
+          path: /tmp/test-reports
 
   node-v4:
     <<: *node-base
@@ -61,4 +68,4 @@ jobs:
   node-v8:
     <<: *node-base
     docker:
-- image: node:8
+      - image: node:8
