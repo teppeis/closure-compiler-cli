@@ -17,8 +17,8 @@
     "google-closure-compiler": ">=20170218.0.0"
   },
   "devDependencies": {
-    "eslint": "^3.18.0",
-    "eslint-config-teppeis": "^5.3.0"
+    "eslint": "^4.5.0",
+    "eslint-config-teppeis": "^6.2.0"
   },
   "homepage": "https://github.com/teppeis/closure-compiler-cli#readme",
   "repository": {
