@@ -1,3 +1,10 @@
+*** @deprecated use [google-closure-compiler](https://www.npmjs.com/package/google-closure-compiler) ***
+====
+
+Now official [google-closure-compiler](https://www.npmjs.com/package/google-closure-compiler) has the CLI command. Just use it!
+
+----
+
 closure-compiler-cli
 ====
 
